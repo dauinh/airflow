@@ -28,6 +28,10 @@ const links = [
     href: "/variables",
     title: "Variables",
   },
+  {
+    href: "/provider",
+    title: "Provider",
+  },
 ];
 
 export const AdminButton = () => (

@@ -31,6 +31,7 @@ import { DagsList } from "src/pages/DagsList";
 import { Dashboard } from "src/pages/Dashboard";
 import { ErrorPage } from "src/pages/Error";
 import { Events } from "src/pages/Events";
+import { Provider } from "src/pages/Provider";
 import { Run } from "src/pages/Run";
 import { Details } from "src/pages/Run/Details";
 import { TaskInstances } from "src/pages/Run/TaskInstances";
@@ -64,6 +65,10 @@ export const router = createBrowserRouter(
         {
           element: <Variables />,
           path: "variables",
+        },
+        {
+          element: <Provider />,
+          path: "provider",
         },
         {
           children: [
