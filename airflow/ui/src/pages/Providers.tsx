@@ -21,17 +21,18 @@ import { Box, Heading, Link, Table } from "@chakra-ui/react";
 import { useProviderServiceGetProviders } from "openapi/queries";
 
 const embedLinks = (text: string) => {
-  const urlRegex =
-    /http(s)?:\/\/[\w.-]+(\.?:[\w.-]+)*([/?#][\w\-._~:/?#[\]@!$&'()*+,;=.%]*)?/gu;
+  const urlRegex = /http(s)?:\/\/[\w.-]+(\.?:[\w.-]+)*([/?#][\w\-._~:/?#[\]@!$&'()*+,;=.%]*)?/gu;
   const urls = text.match(urlRegex);
-  const cleanText = text.replaceAll(/\n(?:and)?/gu, ' ').split(' ');
+  const cleanText = text.replaceAll(/\n(?:and)?/gu, " ").split(" ");
 
   return cleanText.map((part) =>
     urls?.includes(part) ? (
       <Link color="fg.info" href={part} key={part} rel="noopener noreferrer" target="_blank">
-        { part }
+        {part}
       </Link>
-    ) : `${part  } `
+    ) : (
+      `${part} `
+    ),
   );
 };
 
