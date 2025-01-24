@@ -30,7 +30,7 @@ const links = [
   },
   {
     href: "/provider",
-    title: "Provider",
+    title: "Providers",
   },
   {
     href: "/pools",
