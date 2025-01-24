@@ -35,7 +35,7 @@ const embedLinks = (text: string) => {
   );
 };
 
-export const Provider = () => {
+export const Providers = () => {
   const { data } = useProviderServiceGetProviders();
 
   return (
