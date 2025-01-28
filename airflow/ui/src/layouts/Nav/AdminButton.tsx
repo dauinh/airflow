@@ -29,6 +29,10 @@ const links = [
     title: "Variables",
   },
   {
+    href: "/provider",
+    title: "Providers",
+  },
+  {
     href: "/pools",
     title: "Pools",
   },
